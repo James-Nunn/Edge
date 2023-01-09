@@ -1,11 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  color: white;
+  background-color: black;
+
+}
+
+.background1 {
   background-image: url('https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(0, 0, 0, 0.85);
   background-blend-mode: overlay;
   background-size: cover;
-  color: white;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
 }
 
 .container {
@@ -13,6 +21,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 nav {
@@ -79,9 +88,6 @@ nav .nav-button:hover {
   margin: auto;
 }
 
-main {
-  width: 100%;
-}
 
 h1 {
   font-weight: 700;
@@ -90,6 +96,7 @@ h1 {
   text-align: center;
   font-size: 3em;
   margin: 45px 0 32px 0;
+  text-decoration: underline;
 }
 
 h2 {
@@ -97,8 +104,9 @@ h2 {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-top: 0;
+  margin-bottom: 45px;
 }
 
 p {
@@ -108,7 +116,7 @@ p {
   text-align: center;
   font-size: 1.25em;
   margin-bottom: 0;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .edge-buttons {
@@ -189,34 +197,196 @@ p {
 .outline {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-  .card {
-    display: flex;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 50px;
-    background-color: black;
-  }
+.card {
+  border-radius: 10px;
+  margin: 10px 3% 10px 3%;
+  width: 30%;
+  margin-top: 10px;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #DA3E52;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+}
+
+.step {
+  background-color: #DA3E52;
+  border-radius: 10px 10px 0 0 ;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  padding: 20px 0 20px 0;
+}
+
+.step:hover {
+  text-decoration: underline;
+}
+
+mark {
+  background-color: #DA3E52;
+  color: white;
+}
+
+.explanation {
+  padding: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.left {
+  background-color: #DA3E52;
+  color: white;
+  display: flex;
+  width: 25%;
+}
+
+.left h1 {
+  margin: auto;
+  font-size: 2.7em;
+}
+
+.right {
+  text-align: left;
+  display: flex;
+  background-color: black;
+  color: white;
+  width: 70%;
+  padding: 1% 0 1% 5%;
+}
+
+.right h2 {
+  margin: auto;
+  text-align: left;
+  padding-right: 30px;
+}
+
+li h2 {
+  color: #DA3E52;
+  font-weight: 500;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  text-align: left;
+  font-size: 1.2em;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+ol {
+  margin-bottom: 5%
+}
+
+h3 {
+  font-weight: 500;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  font-size: 1em;
+}
+
+ .question {
+  text-decoration: underline;
+  margin-top: 4%;
+}
+
+#examples {
+ text-decoration: underline;
+ margin-top: 4%;
+ margin-bottom: 20px;
+}
+
+.criteria-img {
+  width: 100%;
+  height: auto;
+}
+
+ul{
+  margin: auto 10% 3% 10%;
+}
+
+#scroll-top-button {
+  /* Other button styles */
+  background-color: #DA3E52;
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  margin: 30px;
+}
+
+#scroll-top-button:hover {
+border: 3px solid white;
+}
+
+#scroll-top-button.invisible {
+  visibility: hidden;
+}
+
+#scroll-top-button.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.programmingelements-img{
+  display: block;
+  margin: auto;
+  height: 60vh;
+  width: auto;
+}
 
 
-  .step {
-    background-color: #DA3E52;
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-    font-size: 1.6em;
-    padding: 20px;
-  }
+.usability-row{
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.usability-col{
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid #DA3E52;
+width: 48%;
+  justify-content: space-between;
+}
 
+.card-top{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 0 20px 0;
+  background-color: #DA3E52;
+  margin: 0;
+  font-size: 1.2em;
+  text-decoration: none;
 
-  .explanation {
-    width: 300px;
-    padding: 20px;
-    font-size: 1.2em;
-  }
+}
+
+.usability-list{
+  padding: 20px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+
+}
+
+.usability-list p{
+  margin: 0;
+  font-size: 0.9em;
+  text-align: center;
+}
