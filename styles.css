@@ -3,7 +3,6 @@ body {
   padding: 0;
   color: white;
   background-color: black;
-
 }
 
 .background1 {
@@ -87,7 +86,6 @@ nav .nav-button:hover {
   display: flex;
   margin: auto;
 }
-
 
 h1 {
   font-weight: 700;
@@ -218,7 +216,7 @@ p {
 
 .step {
   background-color: #DA3E52;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
   width: 100%;
   text-align: center;
   font-size: 1.6em;
@@ -285,7 +283,7 @@ li h2 {
 }
 
 ol {
-  margin-bottom: 5%
+  margin-bottom: 5%;
 }
 
 h3 {
@@ -295,15 +293,15 @@ h3 {
   font-size: 1em;
 }
 
- .question {
+.question {
   text-decoration: underline;
   margin-top: 4%;
 }
 
 #examples {
- text-decoration: underline;
- margin-top: 4%;
- margin-bottom: 20px;
+  text-decoration: underline;
+  margin-top: 4%;
+  margin-bottom: 20px;
 }
 
 .criteria-img {
@@ -311,7 +309,7 @@ h3 {
   height: auto;
 }
 
-ul{
+ul {
   margin: auto 10% 3% 10%;
 }
 
@@ -331,7 +329,7 @@ ul{
 }
 
 #scroll-top-button:hover {
-border: 3px solid white;
+  border: 3px solid white;
 }
 
 #scroll-top-button.invisible {
@@ -343,30 +341,29 @@ border: 3px solid white;
   opacity: 1;
 }
 
-.programmingelements-img{
+.programmingelements-img {
   display: block;
   margin: auto;
   height: 60vh;
   width: auto;
 }
 
-
-.usability-row{
+.usability-row {
   margin-top: 5%;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.usability-col{
+.usability-col {
   background-color: black;
   border-radius: 10px;
   border: 1px solid #DA3E52;
-width: 48%;
+  width: 48%;
   justify-content: space-between;
 }
 
-.card-top{
+.card-top {
   width: 100%;
   border-radius: 10px 10px 0 0;
   padding: 20px 0 20px 0;
@@ -374,18 +371,16 @@ width: 48%;
   margin: 0;
   font-size: 1.2em;
   text-decoration: none;
-
 }
 
-.usability-list{
+.usability-list {
   padding: 20px;
   display: flex;
   color: white;
   justify-content: space-between;
-
 }
 
-.usability-list p{
+.usability-list p {
   margin: 0;
   font-size: 0.9em;
   text-align: center;
